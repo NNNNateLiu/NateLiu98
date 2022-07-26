@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DoorR_Transparent
+  m_Controller: {fileID: 9100000, guid: 108d9398383a8458ca09b5bd48934a75, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 22c7b751e3e7c4b6dbd2134339e2d0f2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: df76ef24e62df1349ab18102833007e5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 0fd8e40403b2c4959a78c3a0c5e48246, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a255769e62e81f64697224f5fbc82399, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6f6be861bdfe0485e8532448d3628906, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 370bec7299741fb4cbf340b8a8a97218, type: 2}
