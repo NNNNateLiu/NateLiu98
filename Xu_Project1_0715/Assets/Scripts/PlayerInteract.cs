@@ -43,8 +43,8 @@ public class PlayerInteract : MonoBehaviour
             isHaveKeyCard = true;
         }
 
-        //玩家处于DoorSwitch的碰撞范围，且有门卡，同时按下了F，开门
-        if (other.tag == "DoorSwitch" && Input.GetKey(KeyCode.F))
+        //玩家处于DoorSwitch的碰撞范围，且有门卡，同时按下了Q，开门
+        if (other.tag == "DoorSwitch" && Input.GetKey(KeyCode.Q))
         {
             //当玩家站在开关范围内，且按下了F，执行开门判断逻辑Flowchart
             other.GetComponent<DoorSwitch>().doorSwitch_Flowchart.SetActive(true);

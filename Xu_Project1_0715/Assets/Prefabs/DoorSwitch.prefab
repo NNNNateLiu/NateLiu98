@@ -1167,7 +1167,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.00828, y: -0.00179}
+  m_AnchoredPosition: {x: 0.0052, y: -0.00179}
   m_SizeDelta: {x: 361.08975, y: 310.6158}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &766337227265776140
@@ -1189,7 +1189,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &766337227265776141
 MonoBehaviour:
@@ -1243,6 +1243,7 @@ GameObject:
   - component: {fileID: 766337227740501934}
   - component: {fileID: 766337227740501935}
   - component: {fileID: 766337227740501932}
+  - component: {fileID: 2583791074597166126}
   m_Layer: 0
   m_Name: DoorSwitch
   m_TagString: DoorSwitch
@@ -1358,6 +1359,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ControllingDoor: {fileID: 0}
   doorSwitch_Flowchart: {fileID: 766337227142151123}
+--- !u!210 &2583791074597166126
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766337227740501928}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
 --- !u!1 &766337227768363071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.62, y: 0}
+  m_AnchoredPosition: {x: -7.899994, y: 0}
   m_SizeDelta: {x: -9.24, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &766337227768363068
@@ -1425,7 +1437,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 143
+    m_FontSize: 135
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1436,4 +1448,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: F
+  m_Text: Q
