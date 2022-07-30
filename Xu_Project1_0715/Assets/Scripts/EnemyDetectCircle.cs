@@ -17,6 +17,8 @@ public class EnemyDetectCircle : MonoBehaviour
     public float detectValueDecreaseSpeed;
     public bool isPlayerWithinRange;
 
+    public GameObject warningSign;
+
     private void Start()
     {
         detectCircleScale = detectCircle.transform.localScale;
@@ -71,14 +73,9 @@ public class EnemyDetectCircle : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //µ±Íæ¼Ò½øÈëµÐÈË¼ì²â·¶Î§Ê±£¬¿ªÆôTarget Aim square
+            //ï¿½ï¿½ï¿½ï¿½Ò½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½â·¶Î§Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Target Aim square
             other.transform.GetChild(0).gameObject.SetActive(true);
-        }
-
-        if (other.tag == "Enemy")
-        {
-            //µ±Íæ¼Ò½øÈëµÐÈË¼ì²â·¶Î§Ê±£¬³öÏÖ¸ÐÌ¾ºÅ
-            other.transform.GetChild(0).gameObject.SetActive(true);
+            warningSign.SetActive(true);
         }
     }
 
@@ -86,14 +83,9 @@ public class EnemyDetectCircle : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //µ±Íæ¼ÒÀë¿ªµÐÈË¼ì²â·¶Î§Ê±£¬¹Ø±ÕTarget Aim square
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¿ªï¿½ï¿½ï¿½Ë¼ï¿½â·¶Î§Ê±ï¿½ï¿½ï¿½Ø±ï¿½Target Aim square
             other.transform.GetChild(0).gameObject.SetActive(false);
-        }
-
-        if (other.tag == "Enemy")
-        {
-            //µ±Íæ¼ÒÀë¿ªµÐÈË¼ì²â·¶Î§Ê±£¬¸ÐÌ¾ºÅÏûÊ§
-            other.transform.GetChild(0).gameObject.SetActive(false);
+            warningSign.SetActive(false);
         }
     }
 }

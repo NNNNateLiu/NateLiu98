@@ -85,11 +85,11 @@ public class PlayerController_test : MonoBehaviour
         if (Input.GetKey(KeyCode.D) && !isVerticalMoving)
         {
             moveDirection.x = 1;
-            animator.SetBool("isWalingRight", true);
+            animator.SetBool("isWalkingRight", true);
         }
         else
         {
-            animator.SetBool("isWalingRight", false);
+            animator.SetBool("isWalkingRight", false);
         }
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
