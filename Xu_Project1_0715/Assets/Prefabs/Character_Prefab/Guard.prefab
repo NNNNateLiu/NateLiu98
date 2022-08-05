@@ -91,6 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797601753021271453}
+  - component: {fileID: 1806425673}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Enemy
@@ -115,6 +116,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806425673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3245428748716841021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2e6fda4220a54010b3780c58dcaf294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  startWaitTime: 2
+  movePos: {fileID: 0}
+  leftDownPos: {fileID: 0}
+  rightUpPos: {fileID: 0}
+  guardAnimator: {fileID: 3754414614099820586}
 --- !u!1 &5559262488469423150
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,8 +146,9 @@ GameObject:
   - component: {fileID: 3754414614099820586}
   - component: {fileID: 3284922298071727881}
   - component: {fileID: 7335801482542524887}
+  - component: {fileID: 7771665522139275768}
   m_Layer: 0
-  m_Name: Art_Doc
+  m_Name: Art_Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,6 +250,32 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
+--- !u!61 &7771665522139275768
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559262488469423150}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.47378826}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.142857, y: 6.571429}
+    newSize: {x: 2.142857, y: 6.571429}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.142857, y: 2.1329641}
+  m_EdgeRadius: 0
 --- !u!1 &8874539905713795101
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +368,14 @@ PrefabInstance:
     - target: {fileID: 5238036080415918028, guid: 50b99a5d89f874bd0868e96fe5621947, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329104683879739531, guid: 50b99a5d89f874bd0868e96fe5621947, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329104684052842207, guid: 50b99a5d89f874bd0868e96fe5621947, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8329104684637224196, guid: 50b99a5d89f874bd0868e96fe5621947, type: 3}
       propertyPath: m_RootOrder

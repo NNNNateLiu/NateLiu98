@@ -1332,7 +1332,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03220415, y: -2.4475985}
+  m_Offset: {x: 0.0014986992, y: -3.9362202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1343,7 +1343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8170323, y: 6.895198}
+  m_Size: {x: 3.1442738, y: 9.872442}
   m_EdgeRadius: 0
 --- !u!114 &766337227740501932
 MonoBehaviour:
@@ -1404,8 +1404,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.899994, y: 0}
-  m_SizeDelta: {x: -9.24, y: 0}
+  m_AnchoredPosition: {x: -0.000091552734, y: 60.699997}
+  m_SizeDelta: {x: 203.11, y: 187.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &766337227768363068
 CanvasRenderer:
@@ -1436,12 +1436,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 135
+    m_Font: {fileID: 12800000, guid: 2b2b14047a046224d9c86ba52100d32f, type: 3}
+    m_FontSize: 200
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 146
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

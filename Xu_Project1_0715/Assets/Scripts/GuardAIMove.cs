@@ -37,19 +37,19 @@ public class GuardAIMove : MonoBehaviour
                 guardAnimator.SetBool("isWalkingBack",false);
                 guardAnimator.SetBool("isWalkingLeft",false);
                 guardAnimator.SetBool("isWalkingRight",false);
-                Debug.Log("stand");
+                //Debug.Log("stand");
             }
             
             if (currentMovingDirection.y < 0)
             {
                 guardAnimator.SetBool("isWalking",true);
-                Debug.Log("walkingdown");
+                //Debug.Log("walkingdown");
             }
             
             if(currentMovingDirection.y > 0)
             {
                 guardAnimator.SetBool("isWalkingBack",true);
-                Debug.Log("walkingup");
+                //Debug.Log("walkingup");
             }
         }
         else
@@ -57,12 +57,12 @@ public class GuardAIMove : MonoBehaviour
             if (currentMovingDirection.x < 0)
             {
                 guardAnimator.SetBool("isWalkingLeft",true);
-                Debug.Log("walkingleft");
+                //Debug.Log("walkingleft");
             }
             else
             {
                 guardAnimator.SetBool("isWalkingRight",true);
-                Debug.Log("walkingright");
+                //Debug.Log("walkingright");
             }
         }
 

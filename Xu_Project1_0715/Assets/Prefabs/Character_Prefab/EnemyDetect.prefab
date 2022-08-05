@@ -49,9 +49,10 @@ MonoBehaviour:
   detectCircle: {fileID: 8329104683879739540}
   detectCircleMaterial: {fileID: 2100000, guid: b85c34654638e41dcabf2e1da9854dbc, type: 2}
   circleColor: {r: 1, g: 1, b: 1, a: 0.78039217}
-  detectValueIncreaseSpeed: 0.0008
+  detectValueIncreaseSpeed: 0.003
   detectValueDecreaseSpeed: 0.002
   isPlayerWithinRange: 0
+  warningSign: {fileID: 0}
 --- !u!60 &5714495398884100698
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -157,7 +158,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f2d72a36b7718d84eaf50fe02b8251a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -239,7 +240,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 02f384d8a8ac04441a2a619fe0aa3167, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

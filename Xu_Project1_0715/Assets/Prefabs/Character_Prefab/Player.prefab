@@ -428,7 +428,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009878159, y: -0.10495615}
+  m_Offset: {x: 0.017921448, y: -2.7594266}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -439,7 +439,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4027863, y: 6.6694365}
+  m_Size: {x: 4.8864746, y: 2.4154675}
   m_EdgeRadius: 0
 --- !u!50 &6678754218015481672
 Rigidbody2D:
@@ -477,6 +477,7 @@ MonoBehaviour:
   UI_Item1_KeyCard: {fileID: 0}
   isHaveKeyCard: 0
   player: {fileID: 6678754218357624422}
+  ScreenFlash: {fileID: 0}
 --- !u!1 &6678754218357624420
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6ffefb26a2350499a50ca71f75d713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeedLimit: 20
+  maxSpeedLimit: 10
   animator: {fileID: 6678754217789062893}
   isInConversation: 0
   SceneEnterPoints:
