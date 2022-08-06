@@ -10,5 +10,6 @@ public class DoorSwitch : MonoBehaviour
     public void OpenControllingDoor()
     {
         ControllingDoor.GetComponent<Animator>().SetTrigger("isOpen");
+        Debug.Log("haha");
     }
 }

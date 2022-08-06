@@ -11,6 +11,8 @@ TagManager:
   - EnemyDetectCircle
   - TargetAim
   - Enemy
+  - IDCard
+  - Home_SceneChangeTrigger
   layers:
   - Default
   - TransparentFX

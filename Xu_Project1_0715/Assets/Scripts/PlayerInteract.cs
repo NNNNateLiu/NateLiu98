@@ -7,7 +7,10 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public GameObject UI_Item1_KeyCard;
+    public GameObject UI_Item2_IDCard;
+    
     public bool isHaveKeyCard;
+    public bool isHaveIDCard;
     
     public static PlayerInteract instance;
 
@@ -42,7 +45,18 @@ public class PlayerInteract : MonoBehaviour
             //玩家有了门卡
             isHaveKeyCard = true;
         }
-
+        
+        //玩家处于keycard的碰撞范围，同时按下了E，收集门卡
+        if (other.tag == "IDCard" && Input.GetKey(KeyCode.E))
+        {
+            //销毁地面上的IDCard
+            Destroy(other.gameObject);
+            //激活UI中的IDCard图标
+            UI_Item2_IDCard.SetActive(true);
+            //玩家有了IDCard
+            isHaveIDCard = true;
+        }
+        
         //玩家处于DoorSwitch的碰撞范围，且有门卡，同时按下了Q，开门
         if (other.tag == "DoorSwitch" && Input.GetKey(KeyCode.Q))
         {
@@ -71,10 +85,26 @@ public class PlayerInteract : MonoBehaviour
             //修改playerController中的IsInConversation为真，进入对话
             player.isInConversation = true;
         }
+        
+        if (other.tag == "Home_SceneChangeTrigger")
+        {
+            //当玩家站在场景切换触发范围内，执行场景切换判断逻辑Flowchart
+            other.GetComponent<SceneChangeTrigger>().SceneChangeTrigger_Flowchart.SetActive(true);
+            //执行出家门逻辑时，要让Flowchart中 isHaveIDCard变量值与 脚本中isHaveIDCard保持一致
+            other.GetComponent<SceneChangeTrigger>().SceneChangeTrigger_Flowchart.GetComponent<Flowchart>().SetBooleanVariable("isHaveIDCard",isHaveIDCard);
+            //修改playerController中的IsInConversation为真，进入对话
+            player.isInConversation = true;
+        }
 
         if (other.tag == "KeyCard")
         {
             //当玩家靠近keycard范围中时，激活拾取提示UI
+            other.transform.GetChild(0).gameObject.SetActive(true);
+        }
+        
+        if (other.tag == "IDCard")
+        {
+            //当玩家靠近IDCard范围中时，激活拾取提示UI
             other.transform.GetChild(0).gameObject.SetActive(true);
         }
 
@@ -104,6 +134,12 @@ public class PlayerInteract : MonoBehaviour
         if (other.tag == "KeyCard")
         {
             //当玩家离开keycard范围中时，关闭拾取提示UI
+            other.transform.GetChild(0).gameObject.SetActive(false);
+        }
+        
+        if (other.tag == "IDCard")
+        {
+            //当玩家靠近IDCard范围中时，激活拾取提示UI
             other.transform.GetChild(0).gameObject.SetActive(false);
         }
 
