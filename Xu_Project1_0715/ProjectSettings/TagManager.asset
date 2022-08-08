@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - IDCard
   - Home_SceneChangeTrigger
+  - DialogTrigger
   layers:
   - Default
   - TransparentFX

@@ -121,6 +121,15 @@ public class PlayerInteract : MonoBehaviour
 
             ScreenFlash.SetActive(true);
         }
+
+        if (other.tag == "DialogTrigger")
+        {
+            //当玩家站在场景切换触发范围内，执行场景切换判断逻辑Flowchart
+            other.GetComponent<DialogTrigger>().DialogTrigger_Flowchart.SetActive(true);
+            //修改playerController中的IsInConversation为真，进入对话
+            player.isInConversation = true;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -160,7 +169,8 @@ public class PlayerInteract : MonoBehaviour
 
     public void EndConversation()
     {
-        //修改playerController中的IsInConversation为真，离开对话
+        //修改playerController中的IsInConversation为false，离开对话
         player.isInConversation = false;
     }
+
 }

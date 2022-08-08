@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class NPCController : MonoBehaviour
 {
@@ -20,7 +21,6 @@ public class NPCController : MonoBehaviour
     public int[] ages = new int[6];
     public float[] weights = new float[6];
     public GameObject[] wayPoints;
-    
     
 
     private void Start()
@@ -82,8 +82,5 @@ public class NPCController : MonoBehaviour
         gameObject.transform.position = temp;
     }
 
-    public void MoveToNextWaypoint(GameObject nextWaypoint)
-    {
-        
-    }
+
 }

@@ -118,15 +118,18 @@ public class PlayerController_test : MonoBehaviour
     //delegate 代理
     //int, float, bool, string
     //function
-    void OnEnable() {
+    void OnEnable() 
+    {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
  
-    void OnDisable() {
+    void OnDisable() 
+    {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
     
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
+    {
         //do stuff
         Debug.Log("transfer to right position");
         gameObject.transform.position = SceneEnterPointPositions[SceneEnterPointPositionTogoIndex];
