@@ -8,4 +8,14 @@ public class DialogMangement : MonoBehaviour
     {
         PlayerInteract.instance.EndConversation();
     }
+
+    public void StartMeetMemberTimer()
+    {
+        PlayerController_test.instance.isMeetMemberTimerStart = true;
+    }
+
+    public void StopMeetMemberTimer()
+    {
+        PlayerController_test.instance.isMeetMemberTimerStart = false;
+    }
 }

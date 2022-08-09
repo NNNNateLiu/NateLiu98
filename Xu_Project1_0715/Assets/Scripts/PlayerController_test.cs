@@ -20,6 +20,11 @@ public class PlayerController_test : MonoBehaviour
     public List<Transform> SceneEnterPoints;
     public List<Vector3> SceneEnterPointPositions;
     public int SceneEnterPointPositionTogoIndex;
+
+    public bool isMeetMemberTimerStart;
+    private float currentMeetMemberTimerTime;
+    public float totalMeetMemberTimerTime;
+    public GameObject meetMemberFlowchart;
         
     private void Awake()
     {
@@ -33,7 +38,6 @@ public class PlayerController_test : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
     }
 
     private void Start()
@@ -50,6 +54,8 @@ public class PlayerController_test : MonoBehaviour
     }
     private void Update()
     {
+        #region Move
+
         Vector3 moveDirection = Vector3.zero;
         
         if (Input.GetKey(KeyCode.W))
@@ -101,6 +107,8 @@ public class PlayerController_test : MonoBehaviour
             isVerticalMoving = false;
         }
 
+        #endregion
+        
         //如果玩家处于对话状态，则speed为0；反之则为默认值
         if (isInConversation)
         {
@@ -113,6 +121,18 @@ public class PlayerController_test : MonoBehaviour
             animator.enabled = true;
         }
         rb2D.velocity = moveDirection * currentSpeed;
+
+        if (isMeetMemberTimerStart)
+        {
+            currentMeetMemberTimerTime += Time.deltaTime;
+            if (currentMeetMemberTimerTime >= totalMeetMemberTimerTime)
+            {
+                meetMemberFlowchart.SetActive(true);
+                //isMeetMemberTimerStart = false;
+                currentMeetMemberTimerTime = 0;
+                isInConversation = true;
+            }
+        }
     }
 
     //delegate 代理

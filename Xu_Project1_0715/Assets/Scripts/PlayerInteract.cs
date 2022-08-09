@@ -128,6 +128,9 @@ public class PlayerInteract : MonoBehaviour
             other.GetComponent<DialogTrigger>().DialogTrigger_Flowchart.SetActive(true);
             //修改playerController中的IsInConversation为真，进入对话
             player.isInConversation = true;
+            //如果该对话是一次性对话，则激活一次之后，就不再被激活（切换场景）
+            PlayerDialogManager.instance.isDialogTriggered[other.GetComponent<DialogTrigger>().oneTimeDialogIndex] =
+                true;
         }
 
     }

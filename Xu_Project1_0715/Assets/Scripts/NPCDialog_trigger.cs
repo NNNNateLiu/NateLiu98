@@ -13,12 +13,8 @@ public class NPCDialog_trigger : MonoBehaviour
         if (other.tag == "Player")
         {
             NPCdialog_trigger_Flowchart.SetActive(true);
-            GetComponent<PlayerController_test>().isInConversation= true;
+            //other.GetComponent<PlayerController_test>().isInConversation= true;
+            PlayerController_test.instance.isInConversation = true;
         }
-    }
-    public void EndConversation()
-    {
-        //修改playerController中的IsInConversation为false，离开对话
-        GetComponent<PlayerController_test>().isInConversation = false;
     }
 }
