@@ -46,7 +46,8 @@ MonoBehaviour:
   nameText: Guard
   nameColor: {r: 0.375732, g: 0.639, b: 0.5978644, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 605023e83b9164b41872e18bf891880b, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -93,10 +94,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Father
+  nameColor: {r: 0.04705883, g: 0.039215688, b: 0.16862746, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 11a43411d21bed748a7d68e1e7bf46ce, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -143,10 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Nanny
+  nameColor: {r: 0.3137255, g: 0.38823533, b: 0.50980395, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 094a78e35cf007e4ba415b3ae4aa7e25, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -193,10 +196,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Doc
+  nameColor: {r: 0.2392157, g: 0.34901962, b: 0.34117648, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 8b4c6c75f3fcf134daa3ac726563cb89, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -386,7 +390,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: f05f43d5ca01f4a49873126cc40d4bed, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -433,10 +437,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Reseacher
+  nameColor: {r: 0.431, g: 0.277995, b: 0.35217923, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 33fcdf4c4ba7ec744b51a94cf916437e, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

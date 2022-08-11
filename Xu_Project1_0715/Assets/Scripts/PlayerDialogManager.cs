@@ -25,5 +25,6 @@ public class PlayerDialogManager : MonoBehaviour
     public List<bool> isDialogTriggered;
     //0 - start
     //1 - withFatherFirst
+    //2 - in LAB Node1 memory
     
 }

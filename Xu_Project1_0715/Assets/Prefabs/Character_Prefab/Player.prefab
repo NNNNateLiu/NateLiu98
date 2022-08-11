@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79cc82c558f124781915ca5662a2e949, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UI_Item1_KeyCard: {fileID: 2768958888013106697}
+  UI_Item1_KeyCard: {fileID: 0}
   UI_Item2_IDCard: {fileID: 2768958888588426805}
   isHaveKeyCard: 0
   isHaveIDCard: 0
@@ -744,8 +744,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   SceneEnterPointPositions:
-  - {x: 4.46, y: 8.06, z: 0}
+  - {x: 86.37, y: -26.95, z: 0}
+  - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -936,18 +938,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
---- !u!1 &2768958888588426805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2768958888466615823, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
-  m_PrefabInstance: {fileID: 122662970}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2768958889056201567 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2768958889068419941, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
   m_PrefabInstance: {fileID: 122662970}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2768958888013106697 stripped
+--- !u!1 &2768958888588426805 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2768958887966096947, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2768958888466615823, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
   m_PrefabInstance: {fileID: 122662970}
   m_PrefabAsset: {fileID: 0}

@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1741132202}
+  selectedFlowchart: {fileID: 1655872277}
 --- !u!4 &99429265
 Transform:
   m_ObjectHideFlags: 1
@@ -4731,9 +4731,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 69
-    y: 70
-    width: 111
+    x: 68
+    y: 72
+    width: 112.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4780,7 +4780,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1655872276}
   selectedCommands:
-  - {fileID: 1655872282}
+  - {fileID: 1655872283}
   variables: []
   description: 
   stepPause: 0
@@ -4890,7 +4890,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1655872282
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5141,17 +5141,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1741132202 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1741132202, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-  m_PrefabInstance: {fileID: 1496671606}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1744085609
