@@ -26,5 +26,6 @@ public class PlayerDialogManager : MonoBehaviour
     //0 - start
     //1 - withFatherFirst
     //2 - in LAB Node1 memory
+    //3 - in Lab with System Dialog
     
 }

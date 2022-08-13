@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1741132198
 Transform:
   m_ObjectHideFlags: 0
@@ -62,8 +62,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1741132201}
-  selectedCommands:
-  - {fileID: 1741132204}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -89,8 +88,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68
-    y: 99
+    x: 67
+    y: 98
     width: 111
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -746,7 +745,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   SceneEnterPointPositions:
-  - {x: 86.37, y: -26.95, z: 0}
+  - {x: 3, y: 1, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -765,6 +764,8 @@ MonoBehaviour:
   isMeetMemberTimerStart: 0
   totalMeetMemberTimerTime: 10
   meetMemberFlowchart: {fileID: 1741132197}
+  isInShowScene: 0
+  playerArt: {fileID: 6678754217789062867}
 --- !u!61 &6678754218357624416
 BoxCollider2D:
   m_ObjectHideFlags: 0

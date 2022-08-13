@@ -15,6 +15,8 @@ public class GuardAIMove : MonoBehaviour
     public Animator guardAnimator;
     private Vector2 currentMovingDirection;
 
+    public bool isCaughtPlayer;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -25,6 +27,11 @@ public class GuardAIMove : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (isCaughtPlayer)
+        {
+            return;
+        }
+        
         transform.position = Vector2.MoveTowards(transform.position, movePos.position, speed * Time.deltaTime);
 
         currentMovingDirection = (movePos.position - transform.position).normalized;

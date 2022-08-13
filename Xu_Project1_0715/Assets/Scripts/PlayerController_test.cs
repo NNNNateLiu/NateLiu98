@@ -25,6 +25,10 @@ public class PlayerController_test : MonoBehaviour
     private float currentMeetMemberTimerTime;
     public float totalMeetMemberTimerTime;
     public GameObject meetMemberFlowchart;
+    
+    //如果玩家进入舞台表演场景，则关闭人物美术形象
+    public bool isInShowScene;
+    public GameObject playerArt;
         
     private void Awake()
     {
@@ -154,6 +158,23 @@ public class PlayerController_test : MonoBehaviour
         Debug.Log("transfer to right position");
         gameObject.transform.position = SceneEnterPointPositions[SceneEnterPointPositionTogoIndex];
         //使用IF判断，条件分别是 从哪来 和 到哪去
+        if (isInShowScene)
+        {
+            playerArt.SetActive(false);
+        }
+        else
+        {
+            playerArt.SetActive(true);
+        }
+        
+        //TODO: 刷新小地图样式
+        //1，获取当前玩家位置 - 从场景唯一的index获取
+        //2，在回忆的时候 - 小地图可能要隐藏
+    }
+
+    public void End1()
+    {
+        
     }
     
 }

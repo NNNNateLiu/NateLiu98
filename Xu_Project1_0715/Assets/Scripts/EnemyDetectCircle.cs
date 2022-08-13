@@ -19,6 +19,10 @@ public class EnemyDetectCircle : MonoBehaviour
 
     public GameObject warningSign;
 
+    //当detectValue为1的时候触发，进入对应结局
+    public GameObject flowchart;
+    public GuardAIMove myAIMove;
+
     private void Start()
     {
         detectCircleScale = detectCircle.transform.localScale;
@@ -54,6 +58,9 @@ public class EnemyDetectCircle : MonoBehaviour
         if (detectValue >= 1)
         {
             detectValue = 1;
+            flowchart.SetActive(true);
+            PlayerController_test.instance.isInConversation = true;
+            myAIMove.isCaughtPlayer = true;
         }
 
         if (detectValue <= 0.01f)

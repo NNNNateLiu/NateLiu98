@@ -139,7 +139,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if (other.tag == "WallTransparent")
         {
-            Debug.Log("exit transparent wall");
+            Debug.Log("exit transparent wall.");
             other.transform.parent.GetComponent<Animator>().SetTrigger("ToSolid");
         }
 

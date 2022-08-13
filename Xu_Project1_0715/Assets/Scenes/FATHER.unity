@@ -1046,6 +1046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneChangeTrigger_Flowchart: {fileID: 774898316}
+  isChangeToShowScene: 0
 --- !u!61 &442829731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6134,11 +6135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.8
+      value: -13.39
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.38
+      value: 15.36
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.z
