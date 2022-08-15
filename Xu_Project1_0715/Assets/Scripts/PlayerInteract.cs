@@ -18,6 +18,8 @@ public class PlayerInteract : MonoBehaviour
 
     public GameObject ScreenFlash;
 
+    public string sceneName;
+
     private void Awake()
     {
         if (instance == null)
@@ -84,6 +86,7 @@ public class PlayerInteract : MonoBehaviour
             other.GetComponent<SceneChangeTrigger>().SceneChangeTrigger_Flowchart.SetActive(true);
             //修改playerController中的IsInConversation为真，进入对话
             player.isInConversation = true;
+            FindObjectOfType<LevelLoder>().FadeTo(sceneName);
         }
         
         if (other.tag == "Home_SceneChangeTrigger")

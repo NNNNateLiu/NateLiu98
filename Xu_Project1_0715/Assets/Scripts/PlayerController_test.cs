@@ -29,6 +29,8 @@ public class PlayerController_test : MonoBehaviour
     //如果玩家进入舞台表演场景，则关闭人物美术形象
     public bool isInShowScene;
     public GameObject playerArt;
+
+    public int buildindex;
         
     private void Awake()
     {
@@ -54,7 +56,10 @@ public class PlayerController_test : MonoBehaviour
             Debug.Log("i = " + i);
             SceneEnterPointPositions[i] = SceneEnterPoints[i].position;
         }
-        
+
+        int index = SceneManager.GetActiveScene().buildIndex;
+
+        string name = SceneManager.GetActiveScene().name;
     }
     private void Update()
     {
@@ -166,15 +171,11 @@ public class PlayerController_test : MonoBehaviour
         {
             playerArt.SetActive(true);
         }
-        
+
         //TODO: 刷新小地图样式
         //1，获取当前玩家位置 - 从场景唯一的index获取
         //2，在回忆的时候 - 小地图可能要隐藏
+
     }
 
-    public void End1()
-    {
-        
-    }
-    
 }

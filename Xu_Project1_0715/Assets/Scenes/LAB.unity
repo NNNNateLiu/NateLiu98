@@ -5985,7 +5985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &240610940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6010,7 +6010,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 14.121788, y: 0.2883911}
@@ -32999,11 +32999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 86.4
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -30.4
+      value: -29
       objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624421, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33108,6 +33108,14 @@ PrefabInstance:
     - target: {fileID: 6678754218357624422, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: SceneEnterPointPositions.Array.size
       value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678754218357624422, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
+      propertyPath: SceneEnterPointPositions.Array.data[0].x
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 6678754218357624422, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
+      propertyPath: SceneEnterPointPositions.Array.data[0].y
+      value: -29
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
@@ -37121,6 +37129,63 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 11.436348, y: 6.941478}
   m_EdgeRadius: 0
+--- !u!1001 &1704129150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6234258206661248649, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_Name
+      value: Stage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234258206661248651, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6decd8082ed5ae942a349a63f51da256, type: 3}
 --- !u!1 &1711964116
 GameObject:
   m_ObjectHideFlags: 0
@@ -41593,6 +41658,7 @@ GameObject:
   - component: {fileID: 1878780990}
   - component: {fileID: 1878780994}
   - component: {fileID: 1878780993}
+  - component: {fileID: 1878780995}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -41665,7 +41731,7 @@ MonoBehaviour:
   suppressBlockAutoSelect: 0
 --- !u!114 &1878780993
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -41690,7 +41756,7 @@ MonoBehaviour:
   parameterNameOLD: 
 --- !u!114 &1878780994
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -41710,6 +41776,33 @@ MonoBehaviour:
     stringVal: isOpen
   animatorOLD: {fileID: 0}
   parameterNameOLD: 
+--- !u!114 &1878780995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878780989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  storyText: My father never mentioned it to me. Is that his memory?
+  description: 
+  character: {fileID: 2039116700}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &1878780998
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -41724,7 +41817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: ZZZzzz......
+  storyText: Where am I? What was that memory?
   description: 
   character: {fileID: 2039116700}
   portrait: {fileID: 0}
@@ -41780,7 +41873,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 135
-    width: 111
+    width: 112.4
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -41790,6 +41883,7 @@ MonoBehaviour:
   eventHandler: {fileID: 1878780992}
   commandList:
   - {fileID: 1878780998}
+  - {fileID: 1878780995}
   - {fileID: 1878781000}
   - {fileID: 1878780994}
   - {fileID: 1878780993}
@@ -41823,7 +41917,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1878781001}
   selectedCommands:
-  - {fileID: 1878780993}
+  - {fileID: 1878780998}
   variables: []
   description: 
   stepPause: 0
