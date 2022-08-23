@@ -7,6 +7,7 @@ public class DialogMangement : MonoBehaviour
     public void EndConversation()
     {
         PlayerInteract.instance.EndConversation();
+        Debug.Log("jia");
     }
 
     public void StartMeetMemberTimer()

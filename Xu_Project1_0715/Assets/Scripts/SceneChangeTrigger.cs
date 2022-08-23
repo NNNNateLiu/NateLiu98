@@ -14,6 +14,6 @@ public class SceneChangeTrigger : MonoBehaviour
         PlayerController_test.instance.SceneEnterPointPositionTogoIndex = SceneEnterPointPositionsIndex;
         PlayerController_test.instance.isInShowScene = isChangeToShowScene;
         
-        SceneManager.LoadScene(SceneName);
+        FindObjectOfType<LevelLoder>().FadeTo(SceneName);
     }
 }

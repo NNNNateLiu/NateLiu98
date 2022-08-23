@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,13 @@ public class LevelLoder : MonoBehaviour
     public Text loading;
 
     public float alpha;
-
+    public float fadeModifier;
+    
     private void Start()
     {
         StartCoroutine(FadeIn());
     }
-
+    
     public void FadeTo(string _sceneName)
     {
         StartCoroutine(FadeOut(_sceneName));
@@ -26,9 +28,11 @@ public class LevelLoder : MonoBehaviour
 
         while (alpha > 0)
         {
-            alpha -= Time.deltaTime;
+            alpha -= Time.deltaTime * fadeModifier;
             blackimage.color = new Color(0, 0, 0, alpha);
-            yield return new WaitForSeconds(1);
+            loading.color = new Color(255, 255, 255, alpha);
+            //yield return new WaitForSeconds(0f);
+            yield return null;
         }
     }
 
@@ -38,11 +42,13 @@ public class LevelLoder : MonoBehaviour
 
         while (alpha < 1)
         {
-            alpha += Time.deltaTime;
+            alpha += Time.deltaTime * fadeModifier;
             blackimage.color = new Color(0, 0, 0, alpha);
+            loading.color = new Color(255, 255, 255, alpha);
             yield return null;
         }
-
+        
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
     }
 }

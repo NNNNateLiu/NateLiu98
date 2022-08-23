@@ -176,6 +176,10 @@ public class PlayerController_test : MonoBehaviour
         //1，获取当前玩家位置 - 从场景唯一的index获取
         //2，在回忆的时候 - 小地图可能要隐藏
 
+        UIController.instance.UpdateMinimapPosition();
+
+        //转场动画
+
     }
 
 }
