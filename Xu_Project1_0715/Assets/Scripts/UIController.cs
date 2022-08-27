@@ -64,4 +64,16 @@ public class UIController : MonoBehaviour
         scenesOnMinimap[currentSceneIndex].GetComponent<Image>().sprite = atHereSprite;
         Txt_Location.text = scenesOnMinimap[currentSceneIndex].name;
     }
+    
+    public void OnEnterMinimapPosition(GameObject clickedMinimapPosition)
+    {
+        clickedMinimapPosition.GetComponent<Image>().color = new Color(0.56f, 0.9f, 1, 1);
+        Txt_Location.text = clickedMinimapPosition.name;
+    }
+    
+    public void OnExitMinimapPosition(GameObject clickedMinimapPosition)
+    {
+        clickedMinimapPosition.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        Txt_Location.text = scenesOnMinimap[currentSceneIndex].name;
+    }
 }

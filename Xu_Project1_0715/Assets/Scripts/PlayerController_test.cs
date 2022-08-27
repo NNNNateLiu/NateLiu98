@@ -160,7 +160,7 @@ public class PlayerController_test : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode) 
     {
         //do stuff
-        Debug.Log("transfer to right position");
+        Debug.Log("transfer to right position.");
         gameObject.transform.position = SceneEnterPointPositions[SceneEnterPointPositionTogoIndex];
         //使用IF判断，条件分别是 从哪来 和 到哪去
         if (isInShowScene)

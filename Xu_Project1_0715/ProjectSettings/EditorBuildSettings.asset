@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FATHER_Node1_FatherEnd.unity
     guid: 530b7bd0495dd44d8a12e2d8ec0e2047
+  - enabled: 1
+    path: Assets/Scenes/COMMUNITY_HappyEnding.unity
+    guid: c45f492bd51e04d86b329da15d1ac3a5
   m_configObjects: {}
