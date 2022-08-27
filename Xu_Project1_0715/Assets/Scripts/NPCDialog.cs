@@ -6,7 +6,7 @@ public class NPCDialog : MonoBehaviour
 {
     public GameObject NPCdialog_Flowchart;
 
-    //ÈËÎï¶Ô»°
+    //ï¿½ï¿½ï¿½ï¿½Ô»ï¿½
     public string ChatName;
     public bool canChat;
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,6 +32,7 @@ public class NPCDialog : MonoBehaviour
         if (canChat)
         {
             NPCdialog_Flowchart.SetActive(true);
+            PlayerController_test.instance.isInConversation = true;
         }
     }
 }

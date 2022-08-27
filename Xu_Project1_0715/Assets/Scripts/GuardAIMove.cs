@@ -17,11 +17,16 @@ public class GuardAIMove : MonoBehaviour
 
     public bool isCaughtPlayer;
 
+    public bool hasStartMovePos;
+
     // Start is called before the first frame update
     private void Start()
     {
         waitTime = startWaitTime;
-        movePos.position = GetRandomPos();
+        if (!hasStartMovePos)
+        {
+            movePos.position = GetRandomPos();
+        }
     }
 
     // Update is called once per frame

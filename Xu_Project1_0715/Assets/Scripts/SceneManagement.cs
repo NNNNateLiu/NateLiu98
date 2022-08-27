@@ -8,4 +8,9 @@ public class SceneManagement : MonoBehaviour
     {
         PlayerInteract.instance.EndConversation();
     }
+
+    public void ChangeFadeOutText(string text)
+    {
+        FindObjectOfType<LevelLoder>().loading.text = text;
+    }
 }

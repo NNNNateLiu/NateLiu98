@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/FATHER.unity
+- path: Assets/Scenes/COMMUNITY_HappyEnding.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
