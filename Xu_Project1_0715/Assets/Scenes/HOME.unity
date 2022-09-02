@@ -3421,11 +3421,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209818922}
   m_CullTransparentMesh: 1
---- !u!1 &1217300833 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8465777146613921403, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-  m_PrefabInstance: {fileID: 1496671606}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1332356098
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,50 +3883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 29397494, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 289.194
-      objectReference: {fileID: 0}
-    - target: {fileID: 29397494, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -4.596
-      objectReference: {fileID: 0}
-    - target: {fileID: 29397494, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -109.109474
-      objectReference: {fileID: 0}
-    - target: {fileID: 141227114, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
-    - target: {fileID: 600122643, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
-    - target: {fileID: 1511582973, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
     - target: {fileID: 1741132199, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: character
       value: 
       objectReference: {fileID: 195420166}
-    - target: {fileID: 1870186625, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
-    - target: {fileID: 2058470980, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
-    - target: {fileID: 34506528382734789, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: locationText
-      value: 
-      objectReference: {fileID: 1217300833}
-    - target: {fileID: 5102259744976215921, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6678754218357624420, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4044,18 +3999,6 @@ PrefabInstance:
       propertyPath: SceneEnterPoints.Array.data[15]
       value: 
       objectReference: {fileID: 991787879}
-    - target: {fileID: 7286348354680168678, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7286348354680168678, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7286348354680168678, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
 --- !u!114 &1500843130 stripped

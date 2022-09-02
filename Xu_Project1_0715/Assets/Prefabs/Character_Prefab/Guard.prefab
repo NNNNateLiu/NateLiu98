@@ -190,8 +190,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 997245982815679844}
-  selectedCommands:
-  - {fileID: 8893417090080843005}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -451,6 +450,7 @@ MonoBehaviour:
   rightUpPos: {fileID: 0}
   guardAnimator: {fileID: 3754414614099820586}
   isCaughtPlayer: 0
+  hasStartMovePos: 0
 --- !u!1 &5559262488469423150
 GameObject:
   m_ObjectHideFlags: 0
