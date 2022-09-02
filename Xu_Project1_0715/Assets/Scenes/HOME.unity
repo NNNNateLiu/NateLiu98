@@ -3999,6 +3999,10 @@ PrefabInstance:
       propertyPath: SceneEnterPoints.Array.data[15]
       value: 
       objectReference: {fileID: 991787879}
+    - target: {fileID: 6678754218357624422, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
+      propertyPath: SceneEnterPoints.Array.data[16]
+      value: 
+      objectReference: {fileID: 3961251635081025473}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
 --- !u!114 &1500843130 stripped
@@ -6953,6 +6957,11 @@ Transform:
 --- !u!4 &3961251635081025472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 279627935, guid: 8a5d3c1654f568743bca9d9cec84b333, type: 3}
+  m_PrefabInstance: {fileID: 3961251635081025457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3961251635081025473 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 523854140, guid: 8a5d3c1654f568743bca9d9cec84b333, type: 3}
   m_PrefabInstance: {fileID: 3961251635081025457}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5297365887499269513
