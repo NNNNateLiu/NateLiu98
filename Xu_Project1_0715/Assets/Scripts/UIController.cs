@@ -30,6 +30,7 @@ public class UIController : MonoBehaviour
         }
         else if (instance != this)
         {
+
             Destroy(gameObject);
         }
     }
@@ -60,7 +61,25 @@ public class UIController : MonoBehaviour
     public void UpdateMinimapPosition()
     {
         scenesOnMinimap[currentSceneIndex].GetComponent<Image>().sprite = normalSprite;
+        
+        //如果切换到表演场景，则让currentSceneIndex与实际可游玩场景保持一致
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (SceneManager.GetActiveScene().buildIndex == 6)
+        {
+            currentSceneIndex = 0;
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 7)
+        {
+            currentSceneIndex = 5;
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 8)
+        {
+            currentSceneIndex = 4;
+        }
+
+        
         scenesOnMinimap[currentSceneIndex].GetComponent<Image>().sprite = atHereSprite;
         Txt_Location.text = scenesOnMinimap[currentSceneIndex].name;
     }

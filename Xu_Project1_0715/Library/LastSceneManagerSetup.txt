@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/HOME.unity
+- path: Assets/Scenes/LAB_Node1_Recall.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
