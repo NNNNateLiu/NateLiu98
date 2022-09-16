@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 143534208}
+  selectedFlowchart: {fileID: 1462092330}
 --- !u!4 &99429265
 Transform:
   m_ObjectHideFlags: 1
@@ -3117,17 +3117,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &143534208 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1741132202, guid: 912870c9dc9804447a03f62834f1907c, type: 3}
-  m_PrefabInstance: {fileID: 1496671606}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &144418204
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,6 +9634,10 @@ PrefabInstance:
       propertyPath: startWaitTime
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 997245982815679844, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
+      propertyPath: nodeRect.x
+      value: 68
+      objectReference: {fileID: 0}
     - target: {fileID: 1797601753021271453, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -9701,10 +9694,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5254891986393832982, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 19989499}
     - target: {fileID: 7771665522139275768, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 1.5714285
       objectReference: {fileID: 0}
+    - target: {fileID: 8893417090080843005, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 19989499}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
 --- !u!1 &432252867
@@ -22443,6 +22444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3281597366493397963, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3284922298071727881, guid: 5caeb141dd19275468a34e6c923c996a, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -32306,6 +32311,10 @@ PrefabInstance:
       propertyPath: leftDownPos
       value: 
       objectReference: {fileID: 1150909458}
+    - target: {fileID: 696447007075679452, guid: 4bfa780ef96e09c4782c99ce7608238d, type: 3}
+      propertyPath: methodParameters.Array.data[1].objValue.intValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2351627675528595104, guid: 4bfa780ef96e09c4782c99ce7608238d, type: 3}
       propertyPath: warningSign
       value: 
@@ -32372,6 +32381,17 @@ PrefabInstance:
       objectReference: {fileID: 423958422}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bfa780ef96e09c4782c99ce7608238d, type: 3}
+--- !u!114 &1462092330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6861971904697082308, guid: 4bfa780ef96e09c4782c99ce7608238d, type: 3}
+  m_PrefabInstance: {fileID: 1462092329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1463606183
 GameObject:
   m_ObjectHideFlags: 0

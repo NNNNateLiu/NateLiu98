@@ -748,7 +748,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   SceneEnterPointPositions:
-  - {x: 68.8, y: -13.6, z: 0}
+  - {x: 4.32, y: 7.47, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -1109,11 +1109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2768958888789402228, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -33.2
+      value: -33.19995
       objectReference: {fileID: 0}
     - target: {fileID: 2768958888789402228, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35.1
+      value: -35.099976
       objectReference: {fileID: 0}
     - target: {fileID: 2768958889032669069, guid: 3838cdcca9fcb4c9199dcf7f1d31e4a1, type: 3}
       propertyPath: m_SizeDelta.y
